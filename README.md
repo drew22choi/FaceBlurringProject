@@ -9,9 +9,16 @@ This project detects faces in images and applies a Gaussian blur to each detecte
 git clone https://github.com/drew22choi/FaceBlurringProject.git
 cd blurFaces
 ```
-### 2. Install required libraris
+### 2. Spin up a virtual env
 ```bash
-pip install -r requirements.txt
+python -m venv tf_env
+source tf_env/bin/activate
+```
+### Install required libraries
+```bash
+pip install tensorflow
+pip install tf-keras
+pip install git+https://github.com/serengil/retinaface.git
 ```
 ### 3. Run script to blur images in a folder
 By default, the output folder will be created at the same directory level if not specified
